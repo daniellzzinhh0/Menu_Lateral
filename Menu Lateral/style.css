@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    letter-spacing: 2px;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 49px;
+    background: #232323;
+    padding: 6px 14px;
+    transition: all 0.5s ease;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.Sidebar:hover {
+    width: 270px;
+}
+
+.Sidebar .Logo_Content .Logo {
+    font-size: 27px;
+    color: white;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+}
+
+.Sidebar .Btn {
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 12px;
+    font-size: 30px;
+    height: 39px;
+    width: 30px;
+    text-align: center;
+    line-height: 50px;
+    transform: translate(-50%);
+}
+
+.Sidebar ul {
+    margin-top: 20px;
+}
+
+.Sidebar ul li {
+    position: relative;
+    list-style: none;
+    height: 70px;
+    margin: 0 -15px;  
+    width: 100%;
+    line-height: 50px;
+}
+
+.Sidebar ul li a {
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: all 0.4s ease-in;
+    border-radius: 15px;
+    white-space: nowrap;
+}
+
+.Sidebar ul li a:hover {
+    transition: all 0.4s ease-in;
+    color: #232323;
+    background: red;
+}
+
+.Sidebar .Links_Name {
+    pointer-events: none;
+}
+
+.Sidebar.active .Links_Name {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.Sidebar ul li a ion-icon {
+    height: 20px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.ShopSttock_Content {
+    position: absolute;
+    width: calc(100% - 280px);
+    left: 280px;
+    transition: all 0.5 ease;
+}
+
+.ShopSttock_Content .Text {
+    font-size: 28px;
+    font-weight: 500;
+    color: black;
+    margin: 12px;
+}
+
+.Logo_Name {
+    position: absolute;
+    letter-spacing: 6px;
+    display: fixed;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    font-size: 28px;
+    font-weight: bold;
+    top: 15px;
+    color: white;
+}
